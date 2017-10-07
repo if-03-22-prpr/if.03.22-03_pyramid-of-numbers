@@ -25,7 +25,7 @@ Please enter a number: 3453454359654646756757434
 248648713895134566486535248 / 8 = 31081089236891820810816906
 31081089236891820810816906 / 9 = 3453454359654646756757434
 ```
-Since really big numbers cannot be handled by the typical number types like `int`, `long`, `double`, etc. we have to work around this shortcoming. The basic idea is to create a struct `BigInt` which  handles such big integers by storing every single digit of the number in an array of integers. So the struct holds a member `digits` storing the digits of the big number and a member `digit_count` which stores the number of digits
+Since really big numbers cannot be handled by the typical number types like `int`, `long`, `double`, etc. we have to work around this shortcoming. The basic idea is to create a struct `BigInt` which  handles such big integers by storing every single digit of a number as elements of an array of integers. So the struct holds a member `digits` storing the digits of the big number and a member `digit_count` which stores the number of digits.
 
 ### Example of a BigInt
 Consider the number `n = 4 345 978 349 843 534 984 529 235 492 457` with 31 digits which is definitely longer than the largest integer type possible (`long long`). This number would be represented in a `BigInt` where every digit of `n` is stored as an element of `digits`, i.e., `digits[0] == 7, digits[1] == 5, digits[2] == 4`, and so forth. Note that the digits are stored starting from the least significant digit. The member `digit_count` holds the number of digits, in our example 31.
