@@ -33,11 +33,11 @@ Consider the number `n = 4 345 978 349 843 534 984 529 235 492 457` with 31 digi
 ### Overall Procedure
 The procedure is then as follows:
 1. Get the user input and store it in an array of `char`.
-2. Call `strtobig_int` which takes every character of the user input, converts it to an integer, and stores this into the `BigInt`.
+2. Call `str_to_big_int` which takes every character of the user input, converts it to an integer, and stores this into the `BigInt`.
 3. Do the pyramid calculations and write the results as they come up. Since the standard multiplication and division operations will not work on `BigInt` you have to implement these procedures by yourself.
 
 ## Things to Learn
-This assignment is related to the competency 3.1. In particular you will deepen
+This assignment is related to the competency 3.1. In particular you will deepen your knowledge in
 - Using aggregate data types (structs)
 - Implementing functions
 - Reading specifications
