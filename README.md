@@ -1,4 +1,4 @@
-### IF.03.01 Procedural Programming Winter 2017
+### IF.03.11 Procedural Programming Winter Semester
 
 # Assignment: Pyramid of Numbers
 
