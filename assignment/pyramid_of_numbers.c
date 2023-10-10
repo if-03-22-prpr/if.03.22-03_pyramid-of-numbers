@@ -36,7 +36,7 @@ struct BigInt {
 *** @param *big_int The converted string now as BigInt.
 * @return The number of characters converted.
 */
-int strtobig_int(const char *str, int len, struct BigInt *big_int);
+int strtobig_int(const char* str, int len, struct BigInt* big_int);
 
 /** print_big_int() prints a BigInt.
 *** @param *big_int The BigInt to be printed.
@@ -48,20 +48,20 @@ void print_big_int(const struct BigInt *big_int);
 *** @param factor The int value which is multiplied by BigInt.
 *** @param *big_result The result of the multiplication.
 */
-void multiply(const struct BigInt *big_int, int factor, struct BigInt *big_result);
+void multiply(const struct BigInt* big_int, int factor, struct BigInt* big_result);
 
 /** divide() multiplies a BigInt by an int.
 *** @param big_int The BigInt to be divided.
 *** @param divisor The int value by which we want to devide big_int.
 *** @param *big_result The result of the division.
 */
-void divide(const struct BigInt *big_int, int divisor, struct BigInt *big_result);
+void divide(const struct BigInt* big_int, int divisor, struct BigInt* big_result);
 
 /** copy_big_int() copies a BigInt to another BigInt.
 *** @param from The source where we want to copy from.
 *** @param *to The target where we want to copy to.
 */
-void copy_big_int(const struct BigInt *from, struct BigInt *to);
+void copy_big_int(const struct BigInt* from, struct BigInt* to);
 
 /**
 *** main() reads the base number from which the pyramid has to be calculated
@@ -74,7 +74,7 @@ void copy_big_int(const struct BigInt *from, struct BigInt *to);
 *** 9 and then again with divide() instead of multiply() from 2 to 9.
 ***
 */
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
 	return 0;
 }
